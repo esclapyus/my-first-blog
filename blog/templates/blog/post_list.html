@@ -31,10 +31,11 @@ footer {
 }
 
 a {
-    text-decoration-color: none;
+    color: rgb(125, 183, 202);
     text-decoration: none;
     margin-left: 200px;
     margin-right: 130px;
+    
 }
 
 
@@ -87,7 +88,7 @@ a {
         <div>
                 {% for post in posts %}
                     <div>
-                        <h1 class="posttitle"><a href=""}>{{ post.title}} </a></h1>
+                        <h1 class="posttitle">{{ post.title}} </h1>
                         <p class="datepublished">published: {{ post.published_date }}</p>
                         <p>{{ post.text|linebreaksbr}}</p>
                     
